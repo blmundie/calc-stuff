@@ -1,0 +1,63 @@
+<h2>
+  Calculate minimum runs
+</h2>
+<PaperContent @padding={{true}} class="flex layout-column">
+  <PaperInput
+    @label="height (ft)"
+    @type="number"
+    @value={{this.length}}
+    @onChange={{this.setLength}}
+    @min={{1}}
+  />
+  <PaperInput
+    @label="width (ft)"
+    @type="number"
+    @value={{this.width}}
+    @onChange={{this.setWidth}}
+    @min={{1}}
+  />
+  <span>
+    <bold>
+      area:
+    </bold>
+    {{this.area}}
+    sq ft
+  </span>
+  <span>
+    <bold>
+      2 ft boundry exclusion determinant:
+    </bold>
+    {{this.twoFtBoundryExclusionDeterminant}}
+  </span>
+  <span style="color: {{if this.twoFtExclusionApplies "green" "red"}};">
+    {{if this.twoFtExclusionApplies "2 ft exclusion applies" "no 2ft exclusion"
+    }}
+  </span>
+  {{#if this.twoFtExclusionApplies}}
+    <span>
+      <bold>
+        NminZ = (2 * sqrt({{this.area}})) =
+      </bold>
+      {{this.NminZ}}
+    </span>
+    <span>
+      <bold>
+        Smax = Floor(({{this.width}} - 4) * sqrt(2)) =
+      </bold>
+      {{this.Smax}}
+    </span>
+    <span>
+      <bold>
+        Zmax = 2 * {{this.Smax}} - 19 =
+      </bold>
+      {{this.Zmax}}
+    </span>
+    <span>
+      <bold>
+        MinRuns = {{this.NminZ}} / {{this.Zmax}} =
+      </bold>
+      {{this.MinRuns}}
+    </span>
+  {{/if}}
+</PaperContent>
+<PaperContent />
