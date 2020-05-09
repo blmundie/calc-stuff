@@ -21,10 +21,10 @@
     "module": "es6",
     "experimentalDecorators": true,
     "paths": {
-      "number-of-runs/tests/*": [
+      "calc-stuff/tests/*": [
         "tests/*"
       ],
-      "number-of-runs/*": [
+      "calc-stuff/*": [
         "app/*"
       ],
       "*": [

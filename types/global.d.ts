@@ -1,5 +1,5 @@
 // Types for compiled templates
-declare module 'number-of-runs/templates/*' {
+declare module 'calc-stuff/templates/*' {
   import { TemplateFactory } from 'htmlbars-inline-precompile';
   const tmpl: TemplateFactory;
   export default tmpl;

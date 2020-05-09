@@ -1,6 +1,6 @@
 import Controller from '@ember/controller';
+import { action } from "@ember/object";
 import { tracked } from '@glimmer/tracking';
-import {action} from "@ember/object";
 
 export default class MinimumNumberOfRuns extends Controller.extend({
   // anything which *must* be merged to prototype here
@@ -50,6 +50,6 @@ export default class MinimumNumberOfRuns extends Controller.extend({
 // DO NOT DELETE: this is how TypeScript knows how to look up your controllers.
 declare module '@ember/controller' {
   interface Registry {
-    'minimum-number-of-runs': MinimumNumberOfRuns;
+    'minimum-calc-stuff': MinimumNumberOfRuns;
   }
 }

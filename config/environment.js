@@ -2,7 +2,7 @@
 
 module.exports = function(environment) {
   let ENV = {
-    modulePrefix: 'number-of-runs',
+    modulePrefix: 'calc-stuff',
     environment,
     rootURL: '/',
     locationType: 'auto',

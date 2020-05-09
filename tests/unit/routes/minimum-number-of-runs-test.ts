@@ -1,11 +1,11 @@
-import { module, test } from 'qunit';
 import { setupTest } from 'ember-qunit';
+import { module, test } from 'qunit';
 
-module('Unit | Route | minimum-number-of-runs', function(hooks) {
+module('Unit | Route | minimum-calc-stuff', function(hooks) {
   setupTest(hooks);
 
   test('it exists', function(assert) {
-    let route = this.owner.lookup('route:minimum-number-of-runs');
+    let route = this.owner.lookup('route:minimum-calc-stuff');
     assert.ok(route);
   });
 });
