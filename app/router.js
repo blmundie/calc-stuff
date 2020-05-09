@@ -7,5 +7,5 @@ export default class Router extends EmberRouter {
 }
 
 Router.map(function() {
-  this.route('minimum-calc-stuff', { path: '/' });
+  this.route('minimum-number-of-runs', { path: '/' });
 });
