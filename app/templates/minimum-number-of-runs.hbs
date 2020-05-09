@@ -3,7 +3,7 @@
 </h2>
 <PaperContent @padding={{true}} class="flex layout-column">
   <PaperInput
-    @label="height (ft)"
+    @label="length (ft)"
     @type="number"
     @value={{this.length}}
     @onChange={{this.setLength}}
@@ -54,7 +54,7 @@
     </span>
     <span>
       <bold>
-        MinRuns = {{this.NminZ}} / {{this.Zmax}} =
+        MinRuns = Ceiling({{this.NminZ}} / {{this.Zmax}}) =
       </bold>
       {{this.MinRuns}}
     </span>
